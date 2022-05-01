@@ -1,0 +1,45 @@
+Comment initialiser un dépot git ?
+	git init 
+
+Quelle commande permet de savoir l'état des fichiers dans un dépot git ?
+	git status
+
+Qu'est-ce que sa veut dire qu'un fichier est non-suivi ?
+	Que git detecte que ce fichier n'est pas présent dans le dernier instantané.
+
+Comment placer des fichiers sous suivi de version ?
+	git add nom_fichier
+
+Si un fichier a déjà été indexé, et qu'on le modifie, qu'est-ce qu'il faudra faire ?
+	Il faut le re-ajouter à l'index 
+	git add nom_fichier
+
+Comment lancer la cmd git status de manière courte ?
+	git status -s | --short
+
+Que signifie :
+$ git status -s
+ M README
+MM Rakefile
+A lib/git.rb
+M lib/simplegit.rb
+?? LICENSE.txt
+
+	README a été modifier et indexé
+	Rakefile a été modifier et indexé, mais que des modification plus récente que l'index existe
+	git.rb est un nouveau fichier et indexé
+	simplegit.rb a été modifier et indexé
+	LICENCE.txt est un nouveau fichier et non suivi
+
+Comment faire pour ignorer tous un dossier particulier dans dossier ?
+	dans .gitignore :
+		/**/build/
+
+
+Peut-on avoir d'autre fichier .gitignore pour un dépôt ?
+	Oui, il est possible d'avoir des fichiers .gitignore pour chaque sous dossier d'un dépôt.
+
+
+Comment afficher ce qui a été modifié mais pas encore indexé concrêtement ?
+	git diff
+
