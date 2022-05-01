@@ -42,4 +42,42 @@ Peut-on avoir d'autre fichier .gitignore pour un dépôt ?
 
 Comment afficher ce qui a été modifié mais pas encore indexé concrêtement ?
 	git diff
+		Cette cmd permet de comparer l'espace de taf avec celui dans l'indexe.
+
+Comment comparer ce qui est dans l'indexe par rapport au dernier intantané ?
+	git diff --cached | --staged
+
+Comment utiliser faire lancer un outil extern au lieu de git diff ?
+	git config --global diff.tool "outils"
+	git difftool
+
+Comment paramétrer l'editeur à utiliser quand on fait un git commit sans l'option -m ?
+	git config --global core.editor "editeur"
+
+Comment faire un commit de tous ce qui a été modifier et déjà suivi par git sans l'ajouter à l'index ?
+	git commit -a
+
+Comment supprimer un fichier en suivi de version ?
+	git rm 
+	git rm -f pour forcer un fichier modifier et indexé 
+
+Comment abandonné le suivi d'un fichier tout en le conservant dans l'espace de taf ? (oublie de le signaler dans .gitignore)
+	git rm --cached fichier
+
+Comment afficher avec un git log les différence introduite entre chaque commit ?
+	git log -p
+
+Si je me suis trompé dans le message d'un commit, comment faire pour modifier le message du commit ?
+	git commit --amend
+
+Si j'ai déjà commit, mais que je me rend compte que j'ai oublié d'indexé un fichier, qu'est-ce que je fais ?
+	git add fichier_oublié
+	git commit --amend
+
+Si j'ai un fichier modifié et indexé mais que je veux le desindexé ?
+Si j'ai un fichier modifié mais non indexé et que je veux récupérer les modifications du dernier commit pour se fichier ?
+	Normalement après git status, git indique comment faire, dans ma version actuelle  c'est : 
+		git restore --staged nom_fichier
+
+		git restore nom_fichier
 
