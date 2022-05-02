@@ -1,0 +1,7 @@
+Comment Git stocke ses données ?
+	Il les stockes en instantanés (snapshots)
+
+Qu'est-ce qu'un commit d'un point vue "technique" ?
+	C'est un objet qui contient un pointeur vers l'instantané en question, mais aussi un ou des pointeurs vers le/les commits précédent directement ce commit.
+	
+
