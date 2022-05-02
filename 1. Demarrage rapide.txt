@@ -1,5 +1,4 @@
-Les logiciels de versionning autre que Git enregistre les modifications de fichiers, 
-alors que Git procède comment ?
+Les logiciels de versionning autre que Git enregistre les modifications de fichiers, alors que Git procède comment ?
 	Git enregistre des instantanés lors d'un commit.
 	C'est un peu comme si chaque enregistrement d'un projet dans Git était un système de fichier à part entière.
 
@@ -14,6 +13,6 @@ Comment afficher toutes les config de git (system, global) ?
 Comment changer l'editeur de texte de git ?
 	git config --global core.editor nom_unix | chemin
 
-Comment changer le nom de la branche principale avec la cmd git config ?
+Comment changer le nom de la branche principale par default avec la cmd git config ?
 	git config --global init.defaultBranch nom
 
