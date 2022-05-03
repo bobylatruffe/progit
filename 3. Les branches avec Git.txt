@@ -2,6 +2,25 @@ Comment Git stocke ses données ?
 	Il les stockes en instantanés (snapshots)
 
 Qu'est-ce qu'un commit d'un point vue "technique" ?
-	C'est un objet qui contient un pointeur vers l'instantané en question, mais aussi un ou des pointeurs vers le/les commits précédent directement ce commit.
-	
+	C'est un objet qui contient un pointeur vers l'instantané en question.
+
+Qu'est-ce qu'une branche ?
+	Une branche c'est un pointeur léger et déplaçable vers un commits.
+
+Qu'est-ce que la branch master ?
+	C'est le nom de la branche principale quand on fait un git init.
+	C'est un pointeur qui se déplace automatiquement sur le dernier commit.
+
+Qu'est-ce qu'il se passe si je fais un git branch testing ?
+	Cela crée une nouvelle branche, càd un pointeur sur le commit en courant.
+	Mais ne déplace pas le pointeur spécial HEAD sur celle-ci.
+
+Qu'est-ce que le pointeur HEAD ?
+	C'est un pointeur qui indique sur quel branche nous nous trouvons en local.
+
+Comment basucler sur une autre branche ?
+	git checkout nom_branche
+
+Comment afficher toutes les commits de toutes les branches avec git log ?
+	git log --all
 
