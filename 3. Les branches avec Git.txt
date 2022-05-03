@@ -29,3 +29,8 @@ Comment créer une branche et directement se mettre dessus ?
 	ou depuis 2.23
 	git switch -c nouvelle-branche
 
+Si je dispose d'une B issue d'une branche A, comment fusionner la branche B dans A ?
+	git checkout A
+	git merge B
+
+
