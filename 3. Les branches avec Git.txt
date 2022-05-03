@@ -24,3 +24,7 @@ Comment basucler sur une autre branche ?
 Comment afficher toutes les commits de toutes les branches avec git log ?
 	git log --all
 
+Comment créer une branche et directement se mettre dessus ?
+	git checkout -b <nouvelle-branche>
+	ou depuis 2.23
+	git switch -c nouvelle-branche
