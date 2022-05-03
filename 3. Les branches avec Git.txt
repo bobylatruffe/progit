@@ -33,4 +33,12 @@ Si je dispose d'une B issue d'une branche A, comment fusionner la branche B dans
 	git checkout A
 	git merge B
 
+Comment afficher la liste des branches courantes ?
+	git branch
+
+Qu'indique le caractère * dans la cmd git branch ?
+	Elle indique la branche courante (càd le pointeur HEAD).
+
+Comment afficher les derniers commit de chaque branche ?
+	git branch -v
 
