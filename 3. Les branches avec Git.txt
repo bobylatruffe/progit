@@ -42,3 +42,8 @@ Qu'indique le caractère * dans la cmd git branch ?
 Comment afficher les derniers commit de chaque branche ?
 	git branch -v
 
+Qu'est-ce que ça veut dire qu'une branche est extraite ?
+	Que le pointeur HEAD est dessus.
+
+Qu'est-ce qu'il se passe si j'ai deux branches et que je modifie la même partie d'un fichier, et que je merge ?
+	Il y'a un conflict, qu'il faut résoudre.
