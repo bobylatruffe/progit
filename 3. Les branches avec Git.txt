@@ -47,3 +47,15 @@ Qu'est-ce que ça veut dire qu'une branche est extraite ?
 
 Qu'est-ce qu'il se passe si j'ai deux branches et que je modifie la même partie d'un fichier, et que je merge ?
 	Il y'a un conflict, qu'il faut résoudre.
+
+Que permet l'option --merged de la cmd git branch ?
+	Elle permet de voir les branches qui ont été fusionné avec la branche courant.
+	Nous pouvons supp les branches qui ne possède pas de caractère *, car elles ont été mergé.
+
+Comment renommer une branche localement ?
+	git branch --move ancien_nom nouveau_nom
+
+Comment renommer une branche sur un dépot distant ?
+	git push --set-upstream remote_name nouveau_nom_branch
+	il faut ensuite supp l'ancienne avec 
+		git push remote_name --delete ancien_nom_branch
