@@ -59,3 +59,4 @@ Comment renommer une branche sur un dépot distant ?
 	git push --set-upstream remote_name nouveau_nom_branch
 	il faut ensuite supp l'ancienne avec 
 		git push remote_name --delete ancien_nom_branch
+
