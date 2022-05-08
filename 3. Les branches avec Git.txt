@@ -60,3 +60,27 @@ Comment renommer une branche sur un dépot distant ?
 	il faut ensuite supp l'ancienne avec 
 		git push remote_name --delete ancien_nom_branch
 
+Que sont les branches de suivi à distance ?
+	Ce sont des pointeurs vers l'état des branches sur le depot distant.
+
+Peut-on modifier manuellement des branches de suivi à distance ?
+	Non, ce sont des branches qu'on modifie de manière automatique lors de communication reseau.
+
+Quelle est la forme des branches de suivi à distance ?
+	(distant)/(branche).
+
+Comment pousser une branche local vers un depot distant en modifiant son nom pour le dépot distant ?
+	git push remote_name name_branch_local:name_branch_distant
+
+Quand on fait un fetch d'une branch est-ce on crée cette branch localement pour l'editer ?
+	Non, on a juste une référence (un pointeur) sur l'état de cette branch à distance.
+	Nous avons ce qu'on appelle une branche de suivi à distance.
+
+Si j'ai fetch une branch d'un dépot distant, mais que je veux la fusionner avec une des mes branches ?
+	Je met dans la branche dans laquelle je vais la fusionner, 
+	ensuite :
+		git merge remote_name/branch_distant
+
+Comment créer une branche local basé sur une branch distant ?
+	git branch -b name_branch_local remote_name/name_branch_distant
+
