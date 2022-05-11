@@ -82,5 +82,9 @@ Si j'ai fetch une branch d'un dépot distant, mais que je veux la fusionner avec
 		git merge remote_name/branch_distant
 
 Comment créer une branche local basé sur une branch distant ?
-	git branch -b name_branch_local remote_name/name_branch_distant
+	git checkout -b name_branch_local remote_name/name_branch_distant
+
+Avec git, donnez simplement les deux moyens d'intégrer une branche dans une autre ?
+	- fusion (merge)
+	- rebasant (rebase)
 
